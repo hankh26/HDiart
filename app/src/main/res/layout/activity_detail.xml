@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#D1ECD8"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/DTdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜"
+        android:background="@drawable/bg_edit"
+        android:textSize="26sp"
+        android:padding="8dp"
+        android:textColor="#FF000000"
+        android:layout_below="@id/title"
+        android:layout_marginTop="4dp"/>
+    <TextView
+        android:id="@+id/DTtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textSize="26sp"
+        android:background="@drawable/bg_edit"
+        android:padding="8dp"
+        android:textColor="#FF000000"
+        android:layout_below="@id/title"
+        android:layout_marginTop="4dp"/>
+    <TextView
+        android:id="@+id/DTmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메세지"
+        android:textSize="26sp"
+        android:textColor="#FF000000"
+        android:background="@drawable/bg_edit"
+        android:padding="8dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>

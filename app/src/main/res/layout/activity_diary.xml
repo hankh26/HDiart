@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DiaryActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="날짜"
+        android:inputType="date"
+        android:background="@drawable/bg_edit"
+        android:ems="10"
+        android:padding="10dp"/>
+        <EditText
+            android:id="@+id/et_impressive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="오늘의 단어"
+            android:inputType="text"
+            android:background="@drawable/bg_edit"
+            android:layout_marginLeft="4dp"
+            android:ems="8"
+            android:padding="10dp"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제목"
+        android:inputType="text"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="8dp"
+        android:lines="1"
+        android:ems="30"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textImeMultiLine"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="8dp"
+        android:gravity="top"
+        android:layout_weight="1"
+        android:padding="10dp"/>
+
+    <Button
+        android:onClick="clickImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BEA4E3"
+        android:text="이미지불러오기"
+        android:layout_gravity="right"/>
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_image_black_24dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_edit"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#AF98D1"
+        android:text="Complete"
+        android:onClick="clickComplete"/>
+
+
+</LinearLayout>
